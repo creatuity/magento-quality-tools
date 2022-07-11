@@ -51,7 +51,7 @@ grumphp:
     git_branch_name:
       whitelist:
         # allowed branch names: 'feature-1', 'feature-new', 'feature-new1', 'feature-new-new1'
-        - '/^(hotfix|bugfix|feature)\/(([a-z]+-\d+(-.[a-zA-Z0-9]*)+))|(release\/(\d+\.)?(\d+\.)(\d+))$/'
+        - '/^(hotfix|bugfix|feature)\/(([A-Z]+-\d+(-.[a-zA-Z0-9]*)+))|(release\/(\d+\.)?(\d+\.)(\d+))$/'
       allow_detached_head: true
     # catch not allowed keywords
     git_blacklist:
