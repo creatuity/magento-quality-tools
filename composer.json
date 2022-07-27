@@ -1,0 +1,11 @@
+{
+    "name": "creatuity/magento-quality-tools-configuration",
+    "description": "The package contains configuration for Quality Tools",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Creatuity\\MagentoQualityToolsConfiguration\\": "src/"
+        }
+    },
+    "require": {}
+}
