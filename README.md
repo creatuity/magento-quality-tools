@@ -1,17 +1,23 @@
 # GRUMPHP
 ## Installation
-- Make sure that the package `magento/magento-coding-standard` is installed.
-- Install `GrumPHP` package.
 ```bash
-  composer require --dev phpro/grumphp-shim
+  composer require --dev creatuity/magento-quality-tools-configuration
  ```
-- Follow the instruction from https://github.com/bitExpert/phpstan-magento.
-- Copy the `grumphp.yml` file into your repository.
+
+Add following to your composer.json
+
+```bash
+  "extra": {
+    "grumphp": {
+            "config-default-path": "vendor/magento-quality-tools-configuration/grumphp.yml"
+        }
+  }
+```
 
 ## Usage
 - Branch names - we allow only to use branch names like `feature|bugfix|hoftix/XXX-123-short-description` for task branches and `release/x.x.x` for release branches
 - Commit message - Your commit message **MUST** contain JIRA task number and short description - `[XXX-123] Add feature to alert admin for new user registration`
-- When you want to commit your changes type 
+- When you want to commit your changes, type 
 ```bash
 ./vendor/bin/grumphp git:pre-commit
 ```

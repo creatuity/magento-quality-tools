@@ -2,10 +2,16 @@
     "name": "creatuity/magento-quality-tools-configuration",
     "description": "The package contains configuration for Quality Tools",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Creatuity\\MagentoQualityToolsConfiguration\\": "src/"
-        }
+    "require": {
+        "phpro/grumphp": "^1.13",
+        "phpstan/phpstan": "1.7.*",
+        "phpstan/extension-installer": "^1.1",
+        "bitexpert/phpstan-magento": "^0.23.0"
     },
-    "require": {}
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true,
+            "phpstan/extension-installer": true
+        }
+    }
 }
