@@ -9,7 +9,7 @@ Add following to your composer.json
 ```bash
   "extra": {
     "grumphp": {
-            "config-default-path": "vendor/magento-quality-tools-configuration/grumphp.yml"
+            "config-default-path": "vendor/creatuity/magento-quality-tools-configuration/grumphp.yml"
         }
   }
 ```
