@@ -28,6 +28,3 @@ to run tasks defined in `grumphp.yml` **only** on the code from the commit.
 Warning: class_implements(): Class Vendor\Module\Setup\Patch\Data\ExamplePatch does not exist and could not be loaded in /dev/tests/static/framework/Magento/CodeMessDetector/Rule/Design/AllPurposeAction.php on line 35
 ```
 check this issue on the Github https://github.com/magento/magento2/issues/33430
-
-## Roadmap
-- Add testsuite for CI pipeline.

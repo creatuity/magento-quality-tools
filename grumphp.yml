@@ -109,10 +109,6 @@ grumphp:
         - "./app/code/*/*/Setup/"
       metadata:
         priority: 70
-    #  uncomment to skip modules using whitelist patterns
-    #  whitelist_patterns:
-    #     - /^app\/code\/MyVendor\/MyModuleToSkip\/(.*)/
-
     # https://devdocs.magento.com/guides/v2.4/test/testing.html#phpstan
     phpstan:
       autoload_file: ~
