@@ -40,8 +40,8 @@ grumphp:
       enforce_no_subject_trailing_period: true
       enforce_single_lined_subject: true
       type_scope_conventions: []
-      max_body_width: 80
-      max_subject_width: 80
+      max_body_width: 120
+      max_subject_width: 120
       matchers:
         "Commit message must contain issue topic and number": /^\[[A-Z]+-\d+\]\s*.+$/
       case_insensitive: true
@@ -51,7 +51,7 @@ grumphp:
     git_branch_name:
       whitelist:
         # allowed branch names: 'feature/XXX-123-short-description', 'release/x.x.x', 'bugfix/XXX-123-short-description'
-        - '/^(hotfix|bugfix|feature)\/(([A-Z]+-\d+(-.[a-zA-Z0-9]*)+))|(release\/(\d+\.)?(\d+\.)(\d+))$/'
+        - '/^(hotfix|bugfix|feature)\/(([A-Z]+-\d+(-[a-zA-Z0-9]+)+))$|(release\/(\d+\.)?(\d+\.)(\d+))$/'
       allow_detached_head: true
     # catch not allowed keywords
     git_blacklist:
@@ -86,9 +86,7 @@ grumphp:
     phpcs:
       standard: ./dev/tests/static/framework/Magento
       tab_width: 4
-      severity: 10 # can remove this to dis allow all level of severity.
-      error_severity: 10
-      warning_severity: ~
+      warning_severity: 0
       report: full
       triggered_by: [phtml, php]
       metadata:
@@ -109,10 +107,6 @@ grumphp:
         - "./app/code/*/*/Setup/"
       metadata:
         priority: 70
-    #  uncomment to skip modules using whitelist patterns
-    #  whitelist_patterns:
-    #     - /^app\/code\/MyVendor\/MyModuleToSkip\/(.*)/
-
     # https://devdocs.magento.com/guides/v2.4/test/testing.html#phpstan
     phpstan:
       autoload_file: ~
