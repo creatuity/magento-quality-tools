@@ -1,6 +1,6 @@
 {
-    "name": "creatuity/magento-quality-tools-configuration",
-    "description": "The package contains configuration for Quality Tools",
+    "name": "creatuity/magento-quality-tools",
+    "description": "The composer package basing on GrumPHP tool with pre-defined configuration for Magento projects",
     "type": "library",
     "require": {
         "php": "^7.2.0 || ^8.1.0",
@@ -21,6 +21,11 @@
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "phpro/grumphp-shim": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Creatuity\\MagentoQualityTools" : "src"
         }
     }
 }
