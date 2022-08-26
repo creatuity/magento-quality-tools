@@ -43,7 +43,7 @@ grumphp:
       max_body_width: 120
       max_subject_width: 120
       matchers:
-        "Commit message must contain issue topic and number": /^\[[A-Z]+-\d+\]\s*.+$/
+        "Commit message must contain issue topic and number": /((^\[[A-Z]+-\d+\]\s*)|(^(?i)MERGE)).+$/
       case_insensitive: true
       multiline: false
       additional_modifiers: ''
