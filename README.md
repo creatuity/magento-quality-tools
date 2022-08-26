@@ -25,6 +25,8 @@ According to the [issue]((https://github.com/magento/magento-coding-standard/iss
     },
 ```
 
+and run  `composer install` to apply the changes.
+
 ## Usage
 - Make sure that your changes are in GIT staging area.
 - When you want to commit your changes, type.
