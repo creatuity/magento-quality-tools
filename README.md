@@ -1,7 +1,7 @@
 # GRUMPHP
 ## Installation
 ```bash
-composer require --dev creatuity/magento-quality-tools-configuration
+composer require --dev creatuity/magento-quality-tools
  ```
 
 DO NOT create a `grumphp.yml` file in the root directory when you will be prompted
@@ -11,7 +11,7 @@ Add the following to your `composer.json`
 ```bash
   "extra": {
     "grumphp": {
-            "config-default-path": "vendor/creatuity/magento-quality-tools-configuration/src/grumphp.yml"
+            "config-default-path": "vendor/creatuity/magento-quality-tools/src/grumphp.yml"
         }
   }
 ```
