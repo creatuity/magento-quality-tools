@@ -108,12 +108,13 @@ grumphp:
       metadata:
         priority: 70
     # https://devdocs.magento.com/guides/v2.4/test/testing.html#phpstan
-    phpstan:
-      autoload_file: ~
-      level: 6
-      triggered_by: ['php']
-      force_patterns: []
-      ignore_patterns: []
-      memory_limit: "-1"
-      metadata:
-        priority: 90
+# Disabling it for now, v0.25.0 not fixed this issue: https://github.com/bitExpert/phpstan-magento/issues/272
+#    phpstan:
+#      autoload_file: ~
+#      level: 6
+#      triggered_by: ['php']
+#      force_patterns: []
+#      ignore_patterns: []
+#      memory_limit: "-1"
+#      metadata:
+#        priority: 90
