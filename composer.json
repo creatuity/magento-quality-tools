@@ -4,9 +4,9 @@
     "type": "library",
     "require": {
         "php": "^7.2.0 || ^8.1.0",
-        "phpstan/phpstan": "1.8.*",
+        "phpstan/phpstan": "1.9.2",
         "phpstan/extension-installer": "^1.1",
-        "bitexpert/phpstan-magento": "dev-master",
+        "bitexpert/phpstan-magento": "0.27.*",
         "overtrue/phplint": "^3.1",
         "friendsofphp/php-cs-fixer": "~2.16 || ~3.3",
         "magento/magento-coding-standard": "*",
